@@ -1,4 +1,4 @@
-package com.pmdm.expmdmfebrero.domain
+package com.pmdm.expmdmfebrero.feature.domain
 
 interface AlbumRepository {
     suspend fun fetchAlbums(): List<Album>

@@ -1,7 +1,7 @@
-package com.pmdm.expmdmfebrero.data
+package com.pmdm.expmdmfebrero.feature.data
 
-import com.pmdm.expmdmfebrero.domain.Album
-import com.pmdm.expmdmfebrero.domain.AlbumRepository
+import com.pmdm.expmdmfebrero.feature.domain.Album
+import com.pmdm.expmdmfebrero.feature.domain.AlbumRepository
 
 class AlbumDataRepository(
     private val mockDataSource: AlbumRepository

@@ -1,6 +1,6 @@
-package com.pmdm.expmdmfebrero.data.local
+package com.pmdm.expmdmfebrero.feature.data.local
 
-import com.pmdm.expmdmfebrero.domain.Album
+import com.pmdm.expmdmfebrero.feature.domain.Album
 
 fun fetchAlbums(): List<Album> {
     return listOf(

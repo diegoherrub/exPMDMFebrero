@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardViewAlbum"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <!-- Imagen del álbum -->
+        <ImageView
+            android:id="@+id/ivAlbumImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background"/>
+
+        <!-- Nombre del álbum -->
+        <TextView
+            android:id="@+id/tvAlbumName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/ivAlbumImage"
+            android:layout_marginStart="8dp"
+            android:text="Nombre Álbum"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <!-- Fecha de creación -->
+        <TextView
+            android:id="@+id/tvAlbumDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvAlbumName"
+            android:layout_toEndOf="@id/ivAlbumImage"
+            android:layout_marginStart="8dp"
+            android:text="Fecha de creación"
+            android:textSize="14sp" />
+
+        <!-- Descripción -->
+        <TextView
+            android:id="@+id/tvAlbumDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvAlbumDate"
+            android:layout_toEndOf="@id/ivAlbumImage"
+            android:layout_marginStart="8dp"
+            android:text="Descripción"
+            android:textSize="14sp" />
+
+        <!-- Botón para marcar/desmarcar favorito -->
+        <ImageButton
+            android:id="@+id/btnFavorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/baseline_bookmark_border_24"
+            android:contentDescription="Favorito" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
