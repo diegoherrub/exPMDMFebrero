@@ -1,6 +1,5 @@
 package com.pmdm.expmdmfebrero.feature.domain
 
-
 data class Album(
     val id: Int,
     val name: String,
